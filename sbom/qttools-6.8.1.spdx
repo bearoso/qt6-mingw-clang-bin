@@ -1,0 +1,766 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: qttools-6.8.1
+DocumentNamespace: https://qt.io/spdxdocs/qttools-6.8.1
+Creator: Organization: TheQtCompany
+Creator: Tool: Qt Build System
+CreatorComment: <text>This SPDX document was created from CMake 3.31.2, using the qt
+build system from https://code.qt.io/cgit/qt/qtbase.git/tree/cmake/QtPublicSbomHelpers.cmake</text>
+Created: 2024-12-08T21:45:01Z
+ExternalDocumentRef: DocumentRef-qtbase https://qt.io/spdxdocs/qtbase-6.8.1 SHA1: 1a00c263b652439c0cc799d8c53bff90065c7c2e
+
+PackageName: Clang
+SPDXID: SPDXRef-compiler
+PackageVersion: 19.1.4
+PackageDownloadLocation: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageSupplier: Organization: Anonymous
+FilesAnalyzed: false
+PackageSummary: <text>The compiler as identified by CMake, running on Windows (AMD64)</text>
+PrimaryPackagePurpose: APPLICATION
+Relationship: SPDXRef-compiler BUILD_DEPENDENCY_OF SPDXRef-Package-qttools
+RelationshipComment: <text>SPDXRef-Package-qttools is built by compiler Clang version 19.1.4</text>
+
+PackageName: qttools
+SPDXID: SPDXRef-Package-qttools
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools@6.8.1
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: Copyright (C) The Qt Company Ltd. and other contributors.
+PackageHomePage: https://qt.io
+PackageComment: <text>Built by CMake 3.31.2 with Release configuration for Windows (AMD64)</text>
+PackageVerificationCode: eb2ad141aaafe21a439251fb045a6810de04cc60
+BuiltDate: 2024-12-08T21:45:01Z
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-qttools
+
+PackageName: UiPlugin
+SPDXID: SPDXRef-Package-qttools-qt-module-UiPlugin
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=UiPlugin#src/uiplugin
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-UiPlugin?vcs_url=https://code.qt.io/qt/qttools.git&library_name=UiPlugin#src/uiplugin
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-module-UiPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-module-UiPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qttools-qt-module-UiPlugin DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Widgets
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-module-UiPlugin
+
+PackageName: UiTools
+SPDXID: SPDXRef-Package-qttools-qt-module-UiTools
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=UiTools#src/uitools
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-UiTools?vcs_url=https://code.qt.io/qt/qttools.git&library_name=UiTools#src/uitools
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-OpenGL
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Widgets
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-OpenGLWidgets
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools DEPENDS_ON SPDXRef-Package-qttools-qt-module-UiPlugin
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-module-UiTools
+
+FileName: ./lib/libQt6UiTools.a
+SPDXID: SPDXRef-PackagedFile-qt-module-UiTools
+FileType: BINARY
+FileChecksum: SHA1: a2bcd1e19533af37478589e19a4126359fddeb31
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-module-UiTools CONTAINS SPDXRef-PackagedFile-qt-module-UiTools
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/abstractformbuilder.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/abstractformbuilder.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/formbuilder.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/formbuilder.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/formbuilderextra.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/formbuilderextra_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/properties.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/properties_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/resourcebuilder.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/resourcebuilder_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/textbuilder.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/textbuilder_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/ui4.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/designer/src/lib/uilib/ui4_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/uitools/quiloader.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/uitools/quiloader.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/uitools/quiloader_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-UiTools GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/uitools/qtuitoolsglobal.h
+
+PackageName: Tools
+SPDXID: SPDXRef-Package-qttools-qt-module-Tools
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=Tools#src/global
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-Tools?vcs_url=https://code.qt.io/qt/qttools.git&library_name=Tools#src/global
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-module-Tools
+
+PackageName: lconvert
+SPDXID: SPDXRef-Package-qttools-qt-tool-lconvert
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=lconvert#src/linguist/lconvert
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-lconvert?vcs_url=https://code.qt.io/qt/qttools.git&library_name=lconvert#src/linguist/lconvert
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-tool-lconvert DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-tool-lconvert DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformToolInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lconvert DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-tool-lconvert
+
+FileName: ./bin/lconvert.exe
+SPDXID: SPDXRef-PackagedFile-qt-tool-lconvert
+FileType: BINARY
+FileChecksum: SHA1: 0992a210a42975302a447ee4f4560364eb5c18c1
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-tool-lconvert CONTAINS SPDXRef-PackagedFile-qt-tool-lconvert
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lconvert//src_dir/qttools/build/src/linguist/lconvert/lconvert_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/numerus.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/po.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qm.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qph.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/ts.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xliff.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lconvert/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lconvert/lconvert_longpath.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lconvert GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lconvert/lconvert_longpath.manifest
+
+PackageName: lprodump
+SPDXID: SPDXRef-Package-qttools-qt-tool-lprodump
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=lprodump#src/linguist/lprodump
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-lprodump?vcs_url=https://code.qt.io/qt/qttools.git&library_name=lprodump#src/linguist/lprodump
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-tool-lprodump DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-tool-lprodump DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformToolInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lprodump DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-tool-lprodump
+
+FileName: ./bin/lprodump.exe
+SPDXID: SPDXRef-PackagedFile-qt-tool-lprodump
+FileType: BINARY
+FileChecksum: SHA1: 6d1d363741e7092b03dfc04d9b4c4e9db3b7cf32
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-tool-lprodump CONTAINS SPDXRef-PackagedFile-qt-tool-lprodump
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lprodump//src_dir/qttools/build/src/linguist/lprodump/lprodump_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/ioutils.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/ioutils.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/profileevaluator.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/profileevaluator.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/proitems.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/proitems.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmake_global.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakebuiltins.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeevaluator.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeevaluator.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeevaluator_p.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeglobals.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeglobals.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeparser.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakeparser.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakevfs.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qmakevfs.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qrcreader.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qrcreader.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lprodump/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lprodump/lprodump_longpath.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lprodump/lprodump_longpath.manifest
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lprodump/.qt/rcc/qrc_proparser.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/registry.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lprodump GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/registry_p.h
+
+PackageName: lrelease
+SPDXID: SPDXRef-Package-qttools-qt-tool-lrelease
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=lrelease#src/linguist/lrelease
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-lrelease?vcs_url=https://code.qt.io/qt/qttools.git&library_name=lrelease#src/linguist/lrelease
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformToolInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-tool-lrelease
+
+FileName: ./bin/lrelease.exe
+SPDXID: SPDXRef-PackagedFile-qt-tool-lrelease
+FileType: BINARY
+FileChecksum: SHA1: 032a43216b0eac9abb0be54470bcb450a7dc7540
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease CONTAINS SPDXRef-PackagedFile-qt-tool-lrelease
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lrelease//src_dir/qttools/build/src/linguist/lrelease/lrelease_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/numerus.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/po.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/projectdescriptionreader.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/projectdescriptionreader.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qm.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qph.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/ts.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xliff.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lrelease/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lrelease/lrelease_longpath.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lrelease/lrelease_longpath.manifest
+
+PackageName: lrelease-pro
+SPDXID: SPDXRef-Package-qttools-qt-tool-lrelease-pro
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=lrelease-pro#src/linguist/lrelease-pro
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-lrelease-pro?vcs_url=https://code.qt.io/qt/qttools.git&library_name=lrelease-pro#src/linguist/lrelease-pro
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease-pro DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformToolInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease-pro DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease-pro DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-tool-lrelease-pro
+
+FileName: ./bin/lrelease-pro.exe
+SPDXID: SPDXRef-PackagedFile-qt-tool-lrelease-pro
+FileType: BINARY
+FileChecksum: SHA1: 29b87f735ede681a968f783973d3f04f5a075efa
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-tool-lrelease-pro CONTAINS SPDXRef-PackagedFile-qt-tool-lrelease-pro
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lrelease-pro//src_dir/qttools/build/src/linguist/lrelease-pro/lrelease-pro_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lrelease-pro/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lrelease-pro/lrelease-pro_longpath.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lrelease-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lrelease-pro/lrelease-pro_longpath.manifest
+
+PackageName: lupdate
+SPDXID: SPDXRef-Package-qttools-qt-tool-lupdate
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=lupdate#src/linguist/lupdate
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-lupdate?vcs_url=https://code.qt.io/qt/qttools.git&library_name=lupdate#src/linguist/lupdate
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformToolInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate DEPENDS_ON SPDXRef-Package-qttools-qt-module-Tools
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-tool-lupdate
+
+FileName: ./bin/lupdate.exe
+SPDXID: SPDXRef-PackagedFile-qt-tool-lupdate
+FileType: BINARY
+FileChecksum: SHA1: 00601b92002420a261aef43a2c687ad857cbd552
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate CONTAINS SPDXRef-PackagedFile-qt-tool-lupdate
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate//src_dir/qttools/build/src/linguist/lupdate/lupdate_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/numerus.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/po.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/projectdescriptionreader.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/projectdescriptionreader.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qm.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qph.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qrcreader.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qrcreader.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/simtexth.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/simtexth.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/ts.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xliff.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/cpp.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/cpp.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/java.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/python.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/lupdate.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/merge.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate/ui.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lupdate/lupdate_longpath.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lupdate/lupdate_longpath.manifest
+
+PackageName: lupdate-pro
+SPDXID: SPDXRef-Package-qttools-qt-tool-lupdate-pro
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=lupdate-pro#src/linguist/lupdate-pro
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-lupdate-pro?vcs_url=https://code.qt.io/qt/qttools.git&library_name=lupdate-pro#src/linguist/lupdate-pro
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate-pro DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformToolInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate-pro DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate-pro DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-tool-lupdate-pro
+
+FileName: ./bin/lupdate-pro.exe
+SPDXID: SPDXRef-PackagedFile-qt-tool-lupdate-pro
+FileType: BINARY
+FileChecksum: SHA1: d3fc6bdb4abed1fd6b89de3f7a36a2811c0d60ab
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-tool-lupdate-pro CONTAINS SPDXRef-PackagedFile-qt-tool-lupdate-pro
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate-pro//src_dir/qttools/build/src/linguist/lupdate-pro/lupdate-pro_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/runqttool.h
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/lupdate-pro/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lupdate-pro/lupdate-pro_longpath.rc
+Relationship: SPDXRef-PackagedFile-qt-tool-lupdate-pro GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/lupdate-pro/lupdate-pro_longpath.manifest
+
+PackageName: linguist
+SPDXID: SPDXRef-Package-qttools-qt-app-linguist
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=linguist#src/linguist/linguist
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-linguist?vcs_url=https://code.qt.io/qt/qttools.git&library_name=linguist#src/linguist/linguist
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: APPLICATION
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Core
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Gui
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PrintSupport
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-Widgets
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformAppInternal
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON DocumentRef-qtbase:SPDXRef-Package-qtbase-qt-module-PlatformCommonInternal
+Relationship: SPDXRef-Package-qttools-qt-app-linguist DEPENDS_ON SPDXRef-Package-qttools-qt-module-UiTools
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-app-linguist
+
+FileName: ./bin/linguist.exe
+SPDXID: SPDXRef-PackagedFile-qt-app-linguist
+FileType: BINARY
+FileChecksum: SHA1: b83c029472f14b9909489e2a1de75fd5f7a28893
+LicenseConcluded: LicenseRef-Qt-Commercial OR GPL-3.0-only WITH Qt-GPL-exception-1.0
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qttools-qt-app-linguist CONTAINS SPDXRef-PackagedFile-qt-app-linguist
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/numerus.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/po.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qm.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/qph.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/simtexth.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/simtexth.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translator.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/translatormessage.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/ts.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xliff.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/shared/xmlparser.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/batchtranslation.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/batchtranslationdialog.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/batchtranslationdialog.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/errorsview.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/errorsview.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/finddialog.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/finddialog.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/finddialog.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/formpreviewview.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/formpreviewview.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/globals.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/globals.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/mainwindow.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/mainwindow.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/mainwindow.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messageeditor.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messageeditor.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messageeditorwidgets.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messageeditorwidgets.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messagehighlighter.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messagehighlighter.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messagemodel.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/messagemodel.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrase.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrase.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrasebookbox.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrasebookbox.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrasebookbox.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrasemodel.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phrasemodel.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phraseview.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/phraseview.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/printout.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/printout.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/recentfiles.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/recentfiles.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/sourcecodeview.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/sourcecodeview.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/statistics.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/statistics.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/statistics.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/translatedialog.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/translatedialog.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/translatedialog.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/translationsettings.ui
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/translationsettingsdialog.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist/translationsettingsdialog.h
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/build/src/linguist/linguist/.qt/rcc/qrc_linguist.cpp
+Relationship: SPDXRef-PackagedFile-qt-app-linguist GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qttools/src/linguist/linguist//src_dir/qttools/build/src/linguist/linguist/linguist_resource.rc
+
+PackageName: Linguist
+SPDXID: SPDXRef-Package-qttools-qt-module-Linguist
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=Linguist#src/linguist
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-Linguist?vcs_url=https://code.qt.io/qt/qttools.git&library_name=Linguist#src/linguist
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-module-Linguist
+
+PackageName: QDocCatchPrivate
+SPDXID: SPDXRef-Package-qttools-qt-bundled-3rdparty-module-QDocCatchPrivate
+PackageDownloadLocation: https://github.com/catchorg/Catch2
+PackageVersion: 2.13.10
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: BSL-1.0
+PackageLicenseDeclared: NOASSERTION
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=QDocCatchPrivate#src/qdoc/catch
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-QDocCatchPrivate?vcs_url=https://code.qt.io/qt/qttools.git&library_name=QDocCatchPrivate#src/qdoc/catch
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (c) 2022 Two Blue Cubes Ltd. All rights reserved.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+    Name: Catch2
+    Description: Catch2 is a multi-paradigm test framework for C++.
+    Qt usage: Used for testing of QDoc
+    Information extracted from:
+     /src_dir/qttools/src/qdoc/catch/qt_attribution.json
+    Entry index: 0
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-bundled-3rdparty-module-QDocCatchPrivate
+
+PackageName: QDocCatchConversionsPrivate
+SPDXID: SPDXRef-Package-qttools-qt-module-QDocCatchConversionsPrivate
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=QDocCatchConversionsPrivate#src/qdoc/catch_conversions
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-QDocCatchConversionsPrivate?vcs_url=https://code.qt.io/qt/qttools.git&library_name=QDocCatchConversionsPrivate#src/qdoc/catch_conversions
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-module-QDocCatchConversionsPrivate
+
+PackageName: QDocCatchGeneratorsPrivate
+SPDXID: SPDXRef-Package-qttools-qt-module-QDocCatchGeneratorsPrivate
+PackageDownloadLocation: git://code.qt.io/qt/qttools.git
+PackageVersion: 6.8.1
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qttools?library_name=QDocCatchGeneratorsPrivate#src/qdoc/catch_generators
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qttools-QDocCatchGeneratorsPrivate?vcs_url=https://code.qt.io/qt/qttools.git&library_name=QDocCatchGeneratorsPrivate#src/qdoc/catch_generators
+FilesAnalyzed: true
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qttools:6.8.1:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.8.1:*:*:*:*:*:*:*
+Relationship: SPDXRef-Package-qttools CONTAINS SPDXRef-Package-qttools-qt-module-QDocCatchGeneratorsPrivate
+
+LicenseID: LicenseRef-Qt-Commercial
+ExtractedText: <text>Licensees holding valid commercial Qt licenses may use this software in
+accordance with the the terms contained in a written agreement between
+you and The Qt Company. Alternatively, the terms and conditions that were
+accepted by the licensee when buying and/or downloading the
+software do apply.
+
+For the latest licensing terms and conditions, see https://www.qt.io/terms-conditions.
+For further information use the contact form at https://www.qt.io/contact-us.
+</text>
